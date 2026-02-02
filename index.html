@@ -10,17 +10,10 @@
 <body>
   <header>
     <h1>Perfect Pitch Training</h1>
-    <p><strong>Recognize mode</strong><br>
-  Listen to the played sample, then identify its chroma by clicking the corresponding button or by playing the matching note on your MIDI keyboard.
-</p>
-
-<p><strong>Recall mode</strong><br>
-  Mentally imagine the requested note, then compare it with the note that is played afterward and identify it.
-</p>
-
-<p><strong>Discrimination mode</strong><br>
-  Listen to the played note and identify it among three nearby choices without seeing the target note first.
-</p>
+    <p>
+      Listen to the played sample, then identify its chroma by clicking the corresponding
+      button or by playing the matching note on your MIDI keyboard.
+    </p>
 
   </header>
 
@@ -100,36 +93,6 @@
     </section>
 
     <section class="controls" aria-label="Chromas">
-      <div class="controls-row">
-        <label for="mode-select">Mode</label>
-        <select id="mode-select"></select>
-      </div>
-      <div class="controls-row" id="chroma-set-row">
-        <label for="chroma-set-select">Chroma set</label>
-        <select id="chroma-set-select"></select>
-      </div>
-      <div class="controls-row custom-row" id="custom-chroma-row">
-        <button type="button" id="custom-chroma-button" class="secondary-button">Custom chroma set</button>
-      </div>
-      <div class="controls-row" id="precision-row">
-        <label for="precision-select">Precision</label>
-        <select id="precision-select"></select>
-      </div>
-      <div class="controls-row" id="answer-set-row">
-        <label for="answer-set-select">Answer set</label>
-        <select id="answer-set-select"></select>
-      </div>
-      <div class="controls-row" id="drone-row">
-        <label for="drone-count-select">Drones</label>
-        <select id="drone-count-select"></select>
-        <button type="button" id="drone-reset-button" class="secondary-button">Reset drones</button>
-      </div>
-      <div class="controls-row toggle-row" id="reduced-range-row">
-        <label class="checkbox-label">
-          <input type="checkbox" id="reduced-range-toggle">
-          <div class="label">Reduced range (removes the top and bottom 12 notes)</div>
-        </label>
-      </div>
       <!--
       <div class="controls-row toggle-row">
         <label class="checkbox-label">
@@ -142,15 +105,10 @@
         <label for="feedback-select">Feedback</label>
         <select id="feedback-select"></select>
       </div>
-      <div id="recall-message" class="recall-message" hidden></div>
       <div class="replay-row" id="replay-row">
         <button type="button" id="replay-button" class="chroma replay-button" disabled>
           Replay
         </button>
-      </div>
-      <div id="custom-chroma-picker" class="custom-chroma-picker" hidden>
-        <p class="muted small">Select the chromas you want to enable.</p>
-        <div id="custom-chroma-buttons" class="buttons custom-chroma-buttons"></div>
       </div>
       <div id="chroma-buttons" class="buttons"></div>
     </section>
