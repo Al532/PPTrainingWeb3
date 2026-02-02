@@ -15,58 +15,14 @@ export const chromas = [
   { label: "B", index: 11 },
 ];
 
-export const chromaLookup = {
-  C: 0,
-  "C♯": 1,
-  Db: 1,
-  D: 2,
-  "D♯": 3,
-  Eb: 3,
-  "E♭": 3,
-  E: 4,
-  F: 5,
-  "F♯": 6,
-  Gb: 6,
-  "G♭": 6,
-  G: 7,
-  "G♯": 8,
-  Ab: 8,
-  "A♭": 8,
-  A: 9,
-  "A♯": 10,
-  Bb: 10,
-  "B♭": 10,
-  B: 11,
-};
-
-const baseChromaSets = [
-  { name: "Tritones 1", exerciseType: "Tritones", notes: ["C", "F♯"] },
-  { name: "Tritones 2", exerciseType: "Tritones", notes: ["C♯", "G"] },
-  { name: "Tritones 3", exerciseType: "Tritones", notes: ["D", "A♭"] },
-  { name: "Tritones 4", exerciseType: "Tritones", notes: ["E♭", "A"] },
-  { name: "Tritones 5", exerciseType: "Tritones", notes: ["E", "B♭"] },
-  { name: "Tritones 6", exerciseType: "Tritones", notes: ["F", "B"] },
-  { name: "Thirds 1", exerciseType: "Thirds", notes: ["C", "E", "A♭"] },
-  { name: "Thirds 2", exerciseType: "Thirds", notes: ["C♯", "F", "A"] },
-  { name: "Thirds 3", exerciseType: "Thirds", notes: ["D", "F♯", "B♭"] },
-  { name: "Thirds 4", exerciseType: "Thirds", notes: ["E♭", "G", "B"] },
-  { name: "Minor thirds 1", exerciseType: "Minor thirds", notes: ["C", "E♭", "F♯", "A"] },
-  { name: "Minor thirds 2", exerciseType: "Minor thirds", notes: ["C♯", "E", "G", "B♭"] },
-  { name: "Minor thirds 3", exerciseType: "Minor thirds", notes: ["D", "F", "A♭", "B"] },
-  { name: "Tones 1", exerciseType: "Tones", notes: ["C", "D", "E", "F♯", "A♭", "B♭"] },
-  { name: "Tones 2", exerciseType: "Tones", notes: ["C♯", "E♭", "F", "G", "A", "B"] },
+export const chromaSets = [
   {
     name: "Chromatic",
+    label: "Chromatic",
     exerciseType: "Chromatic",
-    notes: chromas.map((chroma) => chroma.label),
+    chromas,
   },
 ];
-
-export const chromaSets = baseChromaSets.map((set) => ({
-  ...set,
-  label: set.name === "Chromatic" ? "Chromatic" : `${set.name}: ${set.notes.join(", ")}`,
-  chromas: set.notes.map((note) => ({ label: note, index: chromaLookup[note] })),
-}));
 
 export const instruments = [
   "Bassoon",

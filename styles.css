@@ -94,6 +94,14 @@ main {
   font-weight: 600;
 }
 
+.controls-label {
+  font-weight: 600;
+}
+
+.controls-value {
+  color: var(--text);
+}
+
 .controls-row select {
   background: #1f2937;
   color: var(--text);
@@ -128,22 +136,6 @@ main {
     background: #22304a;
     border-color: var(--accent);
   }
-}
-
-.custom-chroma-picker {
-  border: 1px dashed var(--border);
-  border-radius: 12px;
-  padding: 12px;
-  background: rgba(255, 255, 255, 0.02);
-}
-
-.custom-chroma-buttons {
-  margin-top: 8px;
-}
-
-.custom-chroma-buttons .chroma.selected {
-  border-color: var(--accent);
-  background: rgba(88, 166, 255, 0.2);
 }
 
 .checkbox-label {
@@ -182,13 +174,6 @@ main {
 
 .replay-button {
   min-width: 120px;
-}
-
-.recall-message {
-  text-align: center;
-  font-size: 2rem;
-  font-weight: 800;
-  margin: 12px 0 18px;
 }
 
 .stats {
