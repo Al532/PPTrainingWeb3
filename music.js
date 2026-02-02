@@ -40,21 +40,6 @@ export const chromaLookup = {
 };
 
 const baseChromaSets = [
-  { name: "Tritones 1", exerciseType: "Tritones", notes: ["C", "F♯"] },
-  { name: "Tritones 2", exerciseType: "Tritones", notes: ["C♯", "G"] },
-  { name: "Tritones 3", exerciseType: "Tritones", notes: ["D", "A♭"] },
-  { name: "Tritones 4", exerciseType: "Tritones", notes: ["E♭", "A"] },
-  { name: "Tritones 5", exerciseType: "Tritones", notes: ["E", "B♭"] },
-  { name: "Tritones 6", exerciseType: "Tritones", notes: ["F", "B"] },
-  { name: "Thirds 1", exerciseType: "Thirds", notes: ["C", "E", "A♭"] },
-  { name: "Thirds 2", exerciseType: "Thirds", notes: ["C♯", "F", "A"] },
-  { name: "Thirds 3", exerciseType: "Thirds", notes: ["D", "F♯", "B♭"] },
-  { name: "Thirds 4", exerciseType: "Thirds", notes: ["E♭", "G", "B"] },
-  { name: "Minor thirds 1", exerciseType: "Minor thirds", notes: ["C", "E♭", "F♯", "A"] },
-  { name: "Minor thirds 2", exerciseType: "Minor thirds", notes: ["C♯", "E", "G", "B♭"] },
-  { name: "Minor thirds 3", exerciseType: "Minor thirds", notes: ["D", "F", "A♭", "B"] },
-  { name: "Tones 1", exerciseType: "Tones", notes: ["C", "D", "E", "F♯", "A♭", "B♭"] },
-  { name: "Tones 2", exerciseType: "Tones", notes: ["C♯", "E♭", "F", "G", "A", "B"] },
   {
     name: "Chromatic",
     exerciseType: "Chromatic",
